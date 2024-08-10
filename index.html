@@ -75,8 +75,8 @@
           </div>
         </div>
         <div class="card bg-base-100 shadow-xl">
-          <figure>
-            <img src="images/rhombus.png" alt="Shoes" />
+          <figure class="px-10 pt-10">
+            <img src="images/rhombus.png" alt="rhombus" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">Rhombus</h2>
@@ -94,7 +94,7 @@
             <h2 class="card-title">Pentagon</h2>
             <p>Area (A) = 0.5 x p x b</p>
             <div class="flex gap-2">
-              <input type="text" placeholder=" P" class=" w-20 text-xl	 p-1 rounded">
+              <input id="perimeter"  type="text" placeholder=" P" class=" w-20 text-xl	 p-1 rounded">
               <span>cm</span>
               <input type="text" placeholder="b" class=" w-20 text-xl	 p-1 rounded">
               <span>cm</span>
@@ -106,14 +106,19 @@
           </div>
         </div>
         <div class="card bg-base-100  shadow-xl">
-          <figure>
-            <img src="images/ellipse.png" alt="Shoes" />
+          <figure class="px-10 pt-10">
+            <img src="images/ellipse.png" alt="Ellipse" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Ellipse</h2>
-            <p>Area (A) =</p>
+            <h2 class="text-center text-2xl font-bold">Ellipse</h2>
+            <p class="text-center">Area (A) = π ab =</p>
+            <div class="flex gap-5 justify-around	">
+              <input id="major-axis" type="text" placeholder="a" class=" w-20 text-xl	 p-1 rounded">
+              <input id="minor-axis" type="text" placeholder="b" class=" w-20 text-xl	 p-1 rounded">
+            </div>
             <div class="card-actions justify-end">
-              <button class="btn btn-primary w-full">Calculate</button>
+              <button  onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+             
             </div>
           </div>
         </div>
@@ -129,6 +134,8 @@
   <script src="JS/Rectangle.js"></script>
   <script src="JS/parallelogram.js"></script>
   <script src="JS/pentagon.js"></script>
+  <script src="JS/ellipse.js"></script>
+  
   
 </body>
 
